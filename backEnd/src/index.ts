@@ -5,7 +5,7 @@ import cors from "cors"
 import dotenv from "dotenv";
 import cookieParser = require("cookie-parser");
 dotenv.config();
-export const app: Application = express();
+const app: Application = express();
 
 // api/index.ts
 
@@ -34,4 +34,5 @@ connectDB()
 app.listen(4000, () => {
   console.log("Server is running on port 4000");
 })
+export default app
 
