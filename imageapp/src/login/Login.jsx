@@ -11,8 +11,6 @@ export const Login = ({ onAuthSuccess }) => {
   const [loading, setLoading] = useState(false);
 
   // Adjust this to match your backend URL
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!loginData.username.trim() || !loginData.password.trim()) {
